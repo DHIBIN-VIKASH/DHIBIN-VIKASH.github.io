@@ -94,6 +94,9 @@
     .pub-card.esj{--accent:var(--purple);--accent-soft:rgba(124,58,237,0.09)}
     .pub-card.ijo{--accent:var(--teal);--accent-soft:rgba(24,201,188,0.09)}
     .pub-card.wjr{--accent:var(--amber);--accent-soft:rgba(232,168,66,0.10)}
+    .pub-card.jbjs{--accent:var(--green);--accent-soft:rgba(16,185,129,0.10)}
+    .pub-doi--soon{background:var(--off);color:var(--t3);border:1px solid var(--border);cursor:default}
+    .pub-doi--soon:hover{background:var(--off);color:var(--t3);transform:none;box-shadow:none}
     /* gradient wash that fades in on hover */
     .pub-card::before{
       content:'';position:absolute;inset:0;pointer-events:none;
@@ -270,7 +273,7 @@
 <section id="stats">
   <div class="stats-i">
     <div class="stat rv">
-      <div class="stat-n"><span class="counter blue" data-to="8">0</span></div>
+      <div class="stat-n"><span class="counter blue" data-to="9">0</span></div>
       <div class="stat-l">Publications</div>
     </div>
     <div class="stat rv d1">
@@ -294,7 +297,8 @@
 
     <div class="filter-row rv">
       <span class="filter-label">Filter:</span>
-      <button class="f-tab active" data-filter="all">All (8)</button>
+      <button class="f-tab active" data-filter="all">All (9)</button>
+      <button class="f-tab" data-filter="jbjs">JBJS Open Access (1)</button>
       <button class="f-tab" data-filter="gsj">Global Spine Journal (5)</button>
       <button class="f-tab" data-filter="esj">European Spine (1)</button>
       <button class="f-tab" data-filter="ijo">Indian J. Orthopaedics (1)</button>
@@ -308,11 +312,37 @@
         <div class="year-line"></div>
       </div>
 
+      <!-- 0 (newest — In Press) -->
+      <article class="pub-card jbjs rv" data-journal="jbjs">
+        <div class="pub-rail">
+          <div class="pub-index">01</div>
+          <div class="pub-index-slash">/ 09</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-top">
+            <div class="pub-badges">
+              <span class="journal-badge jbjs">JBJS Open Access</span>
+              <span class="type-badge">Agentic AI · SR Automation</span>
+            </div>
+            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>In Press · July 2026</span>
+          </div>
+          <div class="pub-title">A Locally Executed Agentic AI Framework for Deduplication, Screening, and Structured Data Extraction in Spine Surgery Systematic Reviews: A PRISMA-trAIce Compliant Evaluation</div>
+          <div class="pub-divider"></div>
+          <div class="pub-meta">
+            <div class="pub-role"><span class="role-dot"></span>Author</div>
+            <span class="pub-doi pub-doi--soon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              DOI · Coming Soon
+            </span>
+          </div>
+        </div>
+      </article>
+
       <!-- 1 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">01</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">02</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -337,8 +367,8 @@
       <!-- 2 -->
       <article class="pub-card esj rv d1" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">02</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">03</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -363,8 +393,8 @@
       <!-- 3 -->
       <article class="pub-card ijo rv d2" data-journal="ijo">
         <div class="pub-rail">
-          <div class="pub-index">03</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">04</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -389,8 +419,8 @@
       <!-- 4 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">04</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">05</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -415,8 +445,8 @@
       <!-- 5 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">05</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">06</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -441,8 +471,8 @@
       <!-- 6 -->
       <article class="pub-card wjr rv d2" data-journal="wjr">
         <div class="pub-rail">
-          <div class="pub-index">06</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">07</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -467,8 +497,8 @@
       <!-- 7 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">07</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">08</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -493,8 +523,8 @@
       <!-- 8 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">08</div>
-          <div class="pub-index-slash">/ 08</div>
+          <div class="pub-index">09</div>
+          <div class="pub-index-slash">/ 09</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
