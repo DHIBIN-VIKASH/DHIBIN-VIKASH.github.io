@@ -20,7 +20,7 @@
     html{scroll-behavior:smooth}
     :root{
       --navy:#09172B;--navy-mid:#0F2040;--blue:#1B6AF5;--blue-lt:#3D87FF;
-      --teal:#18C9BC;--amber:#E8A842;--purple:#7C3AED;--green:#10B981;
+      --teal:#18C9BC;--amber:#E8A842;--purple:#7C3AED;--green:#10B981;--rose:#E5486A;
       --white:#FFFFFF;--off:#F6F8FC;--border:#E4E8F2;
       --t1:#0C1525;--t2:#4A5878;--t3:#8A96B2;
       --ease:cubic-bezier(0.16,1,0.3,1);
@@ -95,6 +95,7 @@
     .pub-card.ijo{--accent:var(--teal);--accent-soft:rgba(24,201,188,0.09)}
     .pub-card.wjr{--accent:var(--amber);--accent-soft:rgba(232,168,66,0.10)}
     .pub-card.jbjs{--accent:var(--green);--accent-soft:rgba(16,185,129,0.10)}
+    .pub-card.jocr{--accent:var(--rose);--accent-soft:rgba(229,72,106,0.09)}
     .pub-doi--soon{background:var(--off);color:var(--t3);border:1px solid var(--border);cursor:default}
     .pub-doi--soon:hover{background:var(--off);color:var(--t3);transform:none;box-shadow:none}
     /* gradient wash that fades in on hover */
@@ -273,7 +274,7 @@
 <section id="stats">
   <div class="stats-i">
     <div class="stat rv">
-      <div class="stat-n"><span class="counter blue" data-to="11">0</span></div>
+      <div class="stat-n"><span class="counter blue" data-to="12">0</span></div>
       <div class="stat-l">Publications</div>
     </div>
     <div class="stat rv d1">
@@ -297,8 +298,9 @@
 
     <div class="filter-row rv">
       <span class="filter-label">Filter:</span>
-      <button class="f-tab active" data-filter="all">All (11)</button>
+      <button class="f-tab active" data-filter="all">All (12)</button>
       <button class="f-tab" data-filter="jbjs">JBJS Open Access (1)</button>
+      <button class="f-tab" data-filter="jocr">J. Ortho Case Reports (1)</button>
       <button class="f-tab" data-filter="gsj">Global Spine Journal (5)</button>
       <button class="f-tab" data-filter="esj">European Spine (3)</button>
       <button class="f-tab" data-filter="ijo">Indian J. Orthopaedics (1)</button>
@@ -313,10 +315,36 @@
       </div>
 
       <!-- NEW: Osteosarcoma (newest — published 20 Jul 2026) -->
-      <article class="pub-card esj rv" data-journal="esj">
+      <!-- NEW: Forgotten Joint/Spine Editorial (JOCR, Aug 2026) -->
+      <article class="pub-card jocr rv" data-journal="jocr">
         <div class="pub-rail">
           <div class="pub-index">01</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index-slash">/ 12</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-top">
+            <div class="pub-badges">
+              <span class="journal-badge jocr">J. Orthopaedic Case Reports</span>
+              <span class="type-badge">Editorial</span>
+            </div>
+            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>August 2026</span>
+          </div>
+          <div class="pub-title">The Forgotten Joint and Forgotten Spine: Recalibrating Success Around the Patient's Experience</div>
+          <div class="pub-divider"></div>
+          <div class="pub-meta">
+            <div class="pub-role"><span class="role-dot"></span>Co-Author</div>
+            <a href="https://doi.org/10.13107/jocr.2026.v16.i08.7764" target="_blank" rel="noopener" class="pub-doi">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              View Full Text · DOI
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-card esj rv" data-journal="esj">
+        <div class="pub-rail">
+          <div class="pub-index">02</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -341,8 +369,8 @@
       <!-- 0 (newest — Accepted) -->
       <article class="pub-card esj rv" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">02</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">03</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -367,8 +395,8 @@
       <!-- 1 (In Press) -->
       <article class="pub-card jbjs rv" data-journal="jbjs">
         <div class="pub-rail">
-          <div class="pub-index">03</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">04</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -393,8 +421,8 @@
       <!-- 1 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">04</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">05</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -419,8 +447,8 @@
       <!-- 2 -->
       <article class="pub-card esj rv d1" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">05</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">06</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -445,8 +473,8 @@
       <!-- 3 -->
       <article class="pub-card ijo rv d2" data-journal="ijo">
         <div class="pub-rail">
-          <div class="pub-index">06</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">07</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -471,8 +499,8 @@
       <!-- 4 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">07</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">08</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -497,8 +525,8 @@
       <!-- 5 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">08</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">09</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -523,8 +551,8 @@
       <!-- 6 -->
       <article class="pub-card wjr rv d2" data-journal="wjr">
         <div class="pub-rail">
-          <div class="pub-index">09</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">10</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -549,8 +577,8 @@
       <!-- 7 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">10</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">11</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -575,8 +603,8 @@
       <!-- 8 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">11</div>
-          <div class="pub-index-slash">/ 11</div>
+          <div class="pub-index">12</div>
+          <div class="pub-index-slash">/ 12</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
