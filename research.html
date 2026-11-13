@@ -22,7 +22,7 @@
       --navy:#09172B;--navy-mid:#0F2040;--blue:#1B6AF5;--blue-lt:#3D87FF;
       --teal:#18C9BC;--amber:#E8A842;--purple:#7C3AED;--green:#10B981;--rose:#E5486A;--indigo:#4F46E5;
       --white:#FFFFFF;--off:#F6F8FC;--border:#E4E8F2;
-      --t1:#0C1525;--t2:#4A5878;--t3:#8A96B2;
+      --t1:#0C1525;--t2:#4A5878;--t3:#8A96B2;--slate:#64748B;
       --ease:cubic-bezier(0.16,1,0.3,1);
       --max:1120px;--nav:68px;--gap:88px;
       --fdisplay:'Space Grotesk',sans-serif;--fbody:'Inter',sans-serif;--fmono:'JetBrains Mono',monospace;
@@ -97,6 +97,7 @@
     .pub-card.jbjs{--accent:var(--green);--accent-soft:rgba(16,185,129,0.10)}
     .pub-card.jocr{--accent:var(--rose);--accent-soft:rgba(229,72,106,0.09)}
     .pub-card.joa{--accent:var(--indigo);--accent-soft:rgba(79,70,229,0.09)}
+    .pub-card.rsq{--accent:var(--slate);--accent-soft:rgba(100,116,139,0.10)}
     .pub-doi--soon{background:var(--off);color:var(--t3);border:1px solid var(--border);cursor:default}
     .pub-doi--soon:hover{background:var(--off);color:var(--t3);transform:none;box-shadow:none}
     /* gradient wash that fades in on hover */
@@ -276,7 +277,7 @@
   <div class="stats-i">
     <div class="stat rv">
       <div class="stat-n"><span class="counter blue" data-to="14">0</span></div>
-      <div class="stat-l">Publications</div>
+      <div class="stat-l">Peer-Reviewed Publications</div>
     </div>
     <div class="stat rv d1">
       <div class="stat-n"><span class="counter teal" data-to="5">0</span></div>
@@ -299,7 +300,8 @@
 
     <div class="filter-row rv">
       <span class="filter-label">Filter:</span>
-      <button class="f-tab active" data-filter="all">All (14)</button>
+      <button class="f-tab active" data-filter="all">All (16)</button>
+      <button class="f-tab" data-filter="rsq">Research Square (2)</button>
       <button class="f-tab" data-filter="jbjs">JBJS Open Access (1)</button>
       <button class="f-tab" data-filter="jocr">J. Ortho Case Reports (1)</button>
       <button class="f-tab" data-filter="joa">J. Arthroplasty (1)</button>
@@ -316,11 +318,63 @@
         <div class="year-line"></div>
       </div>
 
-      <!-- NEW: Aggressive Lesions of C2 Vertebra (newest — published 27 Sep 2026) -->
-      <article class="pub-card ijo rv" data-journal="ijo">
+      <!-- NEW: INOM Evidence Map preprint (newest — 11 Nov 2026) -->
+      <article class="pub-card rsq rv" data-journal="rsq">
         <div class="pub-rail">
           <div class="pub-index">01</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index-slash">/ 16</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-top">
+            <div class="pub-badges">
+              <span class="journal-badge rsq">Research Square &middot; Preprint</span>
+              <span class="type-badge">Evidence Map</span>
+            </div>
+            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>November 11, 2026</span>
+          </div>
+          <div class="pub-title">Intraoperative Neurophysiological Monitoring in Spine Surgery: An Evidence Map of 66 Systematic Reviews With Evidence-Graded Recommendations</div>
+          <div class="pub-divider"></div>
+          <div class="pub-meta">
+            <div class="pub-role"><span class="role-dot"></span>Co-Author</div>
+            <a href="https://doi.org/10.21203/rs.3.rs-11668816/v1" target="_blank" rel="noopener" class="pub-doi">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              View Full Text · DOI
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NEW: INOM Diagnostic Accuracy preprint (10 Nov 2026) -->
+      <article class="pub-card rsq rv" data-journal="rsq">
+        <div class="pub-rail">
+          <div class="pub-index">02</div>
+          <div class="pub-index-slash">/ 16</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-top">
+            <div class="pub-badges">
+              <span class="journal-badge rsq">Research Square &middot; Preprint</span>
+              <span class="type-badge">Umbrella Review</span>
+            </div>
+            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>November 10, 2026</span>
+          </div>
+          <div class="pub-title">Diagnostic Accuracy of Intraoperative Neurophysiological Monitoring in Spine Surgery: An Umbrella Review and Study-Level Reanalysis</div>
+          <div class="pub-divider"></div>
+          <div class="pub-meta">
+            <div class="pub-role"><span class="role-dot"></span>Co-Author</div>
+            <a href="https://doi.org/10.21203/rs.3.rs-11668775/v1" target="_blank" rel="noopener" class="pub-doi">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              View Full Text · DOI
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NEW: Aggressive Lesions of C2 Vertebra (published 27 Sep 2026) -->
+      <article class="pub-card ijo rv" data-journal="ijo">
+        <div class="pub-rail">
+          <div class="pub-index">03</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -344,8 +398,8 @@
 
       <article class="pub-card joa rv" data-journal="joa">
         <div class="pub-rail">
-          <div class="pub-index">02</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">04</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -353,24 +407,24 @@
               <span class="journal-badge joa">Journal of Arthroplasty</span>
               <span class="type-badge">LLM Evaluation &middot; Clinical AI</span>
             </div>
-            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>August 2026</span>
+            <span class="pub-date"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>October 22, 2026</span>
           </div>
           <div class="pub-title">Evaluating Large Language Models for Patient-Facing Total Knee Arthroplasty Information in Knee Osteoarthritis: Development and Application of the Composite Clinical Reliability Score (CCRS)</div>
           <div class="pub-divider"></div>
           <div class="pub-meta">
             <div class="pub-role"><span class="role-dot"></span>Co-Author</div>
-            <span class="pub-doi pub-doi--soon">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              DOI &middot; Coming Soon
-            </span>
+            <a href="https://doi.org/10.1016/j.arth.2026.10.030" target="_blank" rel="noopener" class="pub-doi">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              View Full Text · DOI
+            </a>
           </div>
         </div>
       </article>
 
       <article class="pub-card jocr rv" data-journal="jocr">
         <div class="pub-rail">
-          <div class="pub-index">03</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">05</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -394,8 +448,8 @@
 
       <article class="pub-card esj rv" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">04</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">06</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -420,8 +474,8 @@
       <!-- 0 (newest — Accepted) -->
       <article class="pub-card esj rv" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">05</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">07</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -446,8 +500,8 @@
       <!-- 1 (In Press) -->
       <article class="pub-card jbjs rv" data-journal="jbjs">
         <div class="pub-rail">
-          <div class="pub-index">06</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">08</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -472,8 +526,8 @@
       <!-- 1 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">07</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">09</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -498,8 +552,8 @@
       <!-- 2 -->
       <article class="pub-card esj rv d1" data-journal="esj">
         <div class="pub-rail">
-          <div class="pub-index">08</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">10</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -524,8 +578,8 @@
       <!-- 3 -->
       <article class="pub-card ijo rv d2" data-journal="ijo">
         <div class="pub-rail">
-          <div class="pub-index">09</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">11</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -550,8 +604,8 @@
       <!-- 4 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">10</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">12</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -576,8 +630,8 @@
       <!-- 5 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">11</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">13</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -602,8 +656,8 @@
       <!-- 6 -->
       <article class="pub-card wjr rv d2" data-journal="wjr">
         <div class="pub-rail">
-          <div class="pub-index">12</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">14</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -628,8 +682,8 @@
       <!-- 7 -->
       <article class="pub-card gsj rv" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">13</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">15</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
@@ -654,8 +708,8 @@
       <!-- 8 -->
       <article class="pub-card gsj rv d1" data-journal="gsj">
         <div class="pub-rail">
-          <div class="pub-index">14</div>
-          <div class="pub-index-slash">/ 14</div>
+          <div class="pub-index">16</div>
+          <div class="pub-index-slash">/ 16</div>
         </div>
         <div class="pub-body">
           <div class="pub-top">
